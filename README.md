@@ -2,7 +2,7 @@
 *espnet-asr* is an End-to-end Automatic Speech Recognition (ASR) system using [ESPnet](https://github.com/espnet/espnet).
 
 End-to-end ASR systems are reported to outperform conventional approaches.
-However, it is not simple for beginners to train robust end-to-end ASR models and make efficient inference program.
+However, it is not simple to train robust end-to-end ASR models and make recognition efficient.
 
 In this project, we provide an easy-to-use inference code, pre-trained models, and training recipes to handle these problems.
 
