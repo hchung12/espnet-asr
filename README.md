@@ -50,7 +50,7 @@ You can check the recognition result.
 ## 4. Fast Decoding
 Recognition latency can be reduced by changing decoding related options, but it can hurt recognition performance.
 
-```(ESPnet) python bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/zeroth_korean```
+```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/zeroth_korean```
 
 ## 5. Other models
 
