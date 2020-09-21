@@ -52,7 +52,7 @@ Recognition latency can be reduced by changing decoding related options, but it 
 
 ```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/zeroth_korean```
 
-## 5. Other models
+## 5. Other pre-trained models
 
 #### 5.1 Librispeech
 You can test Librispeech samples by running the following commands.
