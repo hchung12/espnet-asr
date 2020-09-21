@@ -64,5 +64,9 @@ You can test Librispeech samples by running the following commands.
 #### 5.2 ClovaCall
 Redistribution of ClovaCall dataset is prohibited. You can download the ClovaCall dataset from the [page](https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform)
 
+## 6. Limitations
+* No voice activity detection (VAD) : Speech utterances must be segemented for correct evaluation.
+* No general purpose Korean end-to-end ASR model : The pre-trained Zeroth-Korean and ClovaCall models can not be used for general purpose Korean speech recognition.
+
 ## Contact
 Feel free to ask any questions to hchung@etri.re.kr or requests to issues.
