@@ -36,7 +36,7 @@ Here is a command that recognizes utterances listed in *evalset/zeroth_korean/da
 
 If it causes errors such as "ModuleNotFoundError: No module named 'espnet'", you must use python instead of python3 as follows:
 
-```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/decode_asr.yaml --output_dir output/zeroth_korean```
+```(ESPnet) python bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/decode_asr.yaml --output_dir output/zeroth_korean```
 
 You can check the recognition result.
 
