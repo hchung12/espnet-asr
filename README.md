@@ -32,9 +32,9 @@ You can download pre-trained models for Zeroth-Korean, ClovaCall, and Librispeec
 ## 3. Decoding
 Here is a command that recognizes utterances listed in *evalset/zeroth_korean/data/wav.scp* using the model, *mdl/zeroth_korean.zip*, pre-trained for Zeroth-Korean dataset with decoding options in *conf/decode_asr.yaml*.  
 
-```(ESPnet) python bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/decode_asr.yaml --output_dir output/zeroth_korean```
+```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/decode_asr.yaml --output_dir output/zeroth_korean```
 
-If it causes errors such as "ModuleNotFoundError: No module named 'espnet'", you must use python3 instead of python as follows:
+If it causes errors such as "ModuleNotFoundError: No module named 'espnet'", you must use python instead of python3 as follows:
 
 ```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/decode_asr.yaml --output_dir output/zeroth_korean```
 
@@ -57,9 +57,9 @@ Recognition latency can be reduced by changing decoding related options, but it 
 #### 5.1 Librispeech
 You can test Librispeech samples by running the following commands.
 
-```(ESPnet) python bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/decode_asr.yaml --output_dir output/librispeech```
+```(ESPnet) python3 bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/decode_asr.yaml --output_dir output/librispeech```
 
-```(ESPnet) python bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/librispeech```
+```(ESPnet) python3 bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/librispeech```
 
 #### 5.2 ClovaCall
 Redistribution of ClovaCall dataset is prohibited. You can download the ClovaCall dataset from the [page](https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform)
