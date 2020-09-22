@@ -20,4 +20,4 @@ its corresponding spoken utterance in a restaurant reservation domain. ClovaCall
 
 |Dataset|ClovaCall only CER(%)|Model|Recipe|
 |----------------|--------|---|---|
-|ClovaCall-Base(R)|11.6||https://github.com/hchung12/espnet/tree/egs2/ClovaCall/egs2/ClovaCall/asr1|
+|ClovaCall-Base(R)|11.6|[download](https://zenodo.org/record/4030061/files/asr_train_asr_transformer_ddp_raw_char_sp_valid.acc.ave.zip?download=1)|https://github.com/hchung12/espnet/tree/egs2/ClovaCall/egs2/ClovaCall/asr1|
