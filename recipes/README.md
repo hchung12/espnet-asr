@@ -1,6 +1,6 @@
 # ESPnet2 Recipes
 
-You can download reproducible recipes and pre-trained models for some well-known open speech datasets.
+You can download reproducible recipes and pre-trained models for open speech datasets.
 
 ### 1. Zeroth-Korean Dataset
 
