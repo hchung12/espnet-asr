@@ -35,3 +35,7 @@ fi
 if [ ! -f $dir/librispeech.zip ]; then
   download_mdl $dir "librispeech" "https://zenodo.org/record/4031916/files/asr_train_asr_transformer3_dist_raw_bpe_sp_valid.acc.ave.zip?download=1"
 fi
+
+if [ ! -f $dir/ksponspeech.zip ]; then
+  download_mdl $dir "ksponspeech" "https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1"
+fi
