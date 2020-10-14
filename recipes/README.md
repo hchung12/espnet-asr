@@ -21,3 +21,15 @@ its corresponding spoken utterance in a restaurant reservation domain. ClovaCall
 |Dataset|ClovaCall only CER(%)|Model|Recipe|
 |----------------|--------|---|---|
 |ClovaCall-Base(R)|11.6|[download](https://zenodo.org/record/4030061/files/asr_train_asr_transformer_ddp_raw_char_sp_valid.acc.ave.zip?download=1)|https://github.com/hchung12/espnet/tree/egs2/ClovaCall/egs2/ClovaCall/asr1|
+
+### 3. KsponSpeech Dataset
+ 
+[KsponSpeech](https://www.aihub.or.kr/aidata/105) is a large-scale spontaneous speech corpus of Korean
+corpus. It contains 969 h of general open-domain dialog utterances, spoken by about 2000 native
+Korean speakers in a clean environment.   
+
+|Dataset|WER(%)|Model|Recipe|
+|----------------|---|---|---|
+|eval_clean|21.3|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
+|eval_other|25.6|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
+
