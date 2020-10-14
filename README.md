@@ -58,6 +58,10 @@ You can test KsponSpeech samples by running the following commands.
 
 ```python3 bin/asr_inference.py --mdl mdl/ksponspeech.zip --wav_scp evalset/ksponspeech/data/wav.scp --config conf/decode_asr.yaml --output_dir output/ksponspeech```
 
+You can use the conf/fast_decode_asr_ksponspeech.yaml for fast decoding.
+
+```python3 bin/asr_inference.py --mdl mdl/ksponspeech.zip --wav_scp evalset/ksponspeech/data/wav.scp --config conf/fast_decode_asr_ksponspeech.yaml --output_dir output/fast_ksponspeech```
+
 #### 5.2 ClovaCall
 Redistribution of ClovaCall dataset is prohibited. You can download the ClovaCall dataset from the [page](https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform)
 
