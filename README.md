@@ -53,18 +53,22 @@ Recognition latency can be reduced by changing decoding related options, but it 
 ```(ESPnet) python3 bin/asr_inference.py --mdl mdl/zeroth_korean.zip --wav_scp evalset/zeroth_korean/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/zeroth_korean```
 
 ## 5. Other pre-trained models
+#### 5.1 KsponSpeech
+You can test KsponSpeech samples by running the following commands.
 
-#### 5.1 Librispeech
+```python3 bin/asr_inference.py --mdl mdl/ksponspeech.zip --wav_scp evalset/ksponspeech/data/wav.scp --config conf/decode_asr.yaml --output_dir output/ksponspeech```
+
+#### 5.2 ClovaCall
+Redistribution of ClovaCall dataset is prohibited. You can download the ClovaCall dataset from the [page](https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform)
+
+#### 5.3 Librispeech
 You can test Librispeech samples by running the following commands.
 
 ```(ESPnet) python3 bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/decode_asr.yaml --output_dir output/librispeech```
 
 ```(ESPnet) python3 bin/asr_inference.py --mdl mdl/librispeech.zip --wav_scp evalset/librispeech/data/wav.scp --config conf/fast_decode_asr.yaml --output_dir output/librispeech```
 
-#### 5.2 ClovaCall
-Redistribution of ClovaCall dataset is prohibited. You can download the ClovaCall dataset from the [page](https://docs.google.com/forms/d/e/1FAIpQLSf5bm7FtWYeZf8C02mlyZCg32yMrA9_DgKU17oD0migPkEXog/viewform)
-
-#### 5.3 ESPnet Model Zoo
+#### 5.4 ESPnet Model Zoo
 You can get more information for pre-trained models in [ESPnet model zoo](https://github.com/espnet/espnet_model_zoo)
 
 ## 6. Limitations
