@@ -77,7 +77,6 @@ You can get more information for pre-trained models in [ESPnet model zoo](https:
 
 ## 6. Limitations
 * Voice activity detection (VAD) is not supported : Speech utterances must be segemented for correct evaluation.
-* General Korean end-to-end ASR model is not supported : The pre-trained Zeroth-Korean and ClovaCall models can not be used for general purpose Korean speech recognition.
 
 ## Contact
 Feel free to ask any questions to hchung@etri.re.kr or requests to issues.
