@@ -30,6 +30,6 @@ Korean speakers in a clean environment.
 
 |Dataset|WER(%)|Model|Recipe|
 |----------------|---|---|---|
-|eval_clean|21.3|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
-|eval_other|25.6|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
+|eval_clean|20.9|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
+|eval_other|25.2|[download](https://zenodo.org/record/4086352/files/asr_train_asr_transformer1_ddp_raw_bpe_valid.acc.ave.zip?download=1)||
 
