@@ -83,6 +83,7 @@ You can get more information for pre-trained models in [ESPnet model zoo](https:
 To perform inference testing on YouTube data, you need to install youtube-dl and sox as follows.
 
 ```(ESPnet) conda install -c conda-forge youtube-dl```
+
 ```(ESPnet) yum install sox```
 
 You can use "tools/recog_youtube.sh" to do inference testing. "tools/recog_youtube.sh" extracts audio stream from a given YouTube URL, splits the audio file into multiple files of 5 seconds in length, and then run the inference program for each segmented file.
