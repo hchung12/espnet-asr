@@ -80,9 +80,11 @@ You can get more information for pre-trained models in [ESPnet model zoo](https:
 * Voice activity detection (VAD) is not supported : Speech utterances must be segemented for correct evaluation.
 
 ## 7. Inference testing on YouTube data
-To perform inference testing on YouTube data, you need to install youtube-dl and sox as follows.
+To perform inference testing on YouTube data, you need to install youtube-dl, ffmpeg, and sox as follows.
 
 ```(ESPnet) conda install -c conda-forge youtube-dl```
+
+```conda install -c conda-forge ffmpeg```
 
 ```(ESPnet) yum install sox```
 

@@ -11,6 +11,7 @@ log() {
 download_dir=download
 length=5
 url=
+ngpu=0
 mdl=mdl/ksponspeech.zip
 config=conf/decode_asr.yaml
 output=output
@@ -27,6 +28,7 @@ Options:
   --download_dir      # Download dir (default="${download_dir}").
   --length            # Split length (default="${length}").
   --url               # Youtube URL.
+  --ngpu              # Number of GPU (default="${ngpu}").
   --mdl               # Inference model file (default="${mdl}").
   --config            # Inference config file (default="${config}").
   --output            # Inference output director (default="${output}").
@@ -69,6 +71,7 @@ fi
 
 if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
   python3 bin/asr_inference.py \
+    --ngpu ${ngpu} \
     --mdl ${mdl} \
     --wav_scp ${wav_scp} \
     --config ${config} \
