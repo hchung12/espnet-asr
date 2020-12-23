@@ -24,6 +24,7 @@ Then, install ESPnet.
 
 ```(ESPnet) pip install espnet```
 
+
 ## 2. Downloading pre-trained models
 You can download pre-trained models for Zeroth-Korean, ClovaCall, KSponSpeech and Librispeech datasets. You can check the performance of the pre-trained models [here](https://github.com/hchung12/espnet-asr/tree/master/recipes).
 
@@ -77,6 +78,34 @@ You can get more information for pre-trained models in [ESPnet model zoo](https:
 
 ## 6. Limitations
 * Voice activity detection (VAD) is not supported : Speech utterances must be segemented for correct evaluation.
+
+## 7. Inference testing on YouTube data
+To perform inference testing on YouTube data, you need to install youtube-dl and sox as follows.
+
+```(ESPnet) conda install -c conda-forge youtube-dl```
+```(ESPnet) yum install sox```
+
+You can use "tools/recog_youtube.sh" to do inference testing. "tools/recog_youtube.sh" extracts audio stream from a given YouTube URL, splits the audio file into multiple files of 5 seconds in length, and then run the inference program for each segmented file.
+For example, to recognize audio stream in "https://www.youtube.com/watch?v=foLYddwKDcs&ab_channel=KBSNews", you can run the following command.
+
+```(ESPnet) tools/recog_youtube.sh --url foLYddwKDcs --download-dir download/foLYddwKDcs```
+
+The command downloads audio from YouTube URL "foLYddwKDcs" to "download/foLYddwKDcs" directory, and run "bin/asr_inference.py" using "mdl/ksponspeech.zip" model.
+You can check the recognition result.
+```
+(ESPnet) cat output/foLYddwKDcs/1best_recog/text 
+foLYddwKDcs001 아 정부는 이번 주말이 중대 분기점이 들 거라면서 주말 상황을 지켜본
+foLYddwKDcs002 그게 거리 두 개 3단계 격상력으로 결정하겠다고 했습니다 또 방역에 힘을 모아주
+foLYddwKDcs003 어 될 수 있으면 집에 머물러 줄 것을 겉음료증 있습니다 안다 연계잡니다
+foLYddwKDcs004 정부네는 사회적 벌이 둘이 3단계 격상을
+foLYddwKDcs005 배우에 보루라고 보고 있습니다 1월 판단을 중대 분기점이 성탄절 
+...
+```
+
+To run only inference step, run the script with "--stage" set to 2.
+
+```tools/recog_youtube.sh --stage 2 --url foLYddwKDcs --download-dir download/foLYddwKDcs --mdl mdl/ksponspeech.zip --config conf/fast_decode_asr_ksponspeech.yaml --output output/foLYddwKDcs```
+
 
 ## Contact
 Feel free to ask any questions to hchung@etri.re.kr or requests to issues.
